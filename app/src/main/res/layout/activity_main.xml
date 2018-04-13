@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.jacob.justjava30.MainActivity">
+
+    <!--Weight funciona para distribuir uniformemente las vistas
+        dandoles un peso en esta, solo sirve en linear layout-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:text="Calculadora de funciones"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.4">
+
+        <RadioButton
+            android:id="@+id/main_rb_secante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secante" />
+
+        <RadioButton
+            android:id="@+id/main_rb_biseccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biseccion" />
+
+        <RadioButton
+            android:id="@+id/main_rb_falsaposicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Falsa Posicion" />
+
+        <RadioButton
+            android:id="@+id/main_rb_newton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secante" />
+    </RadioGroup>
+
+    <EditText
+
+        android:id="@+id/main_et_cajita"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.15"
+        android:inputType="numberDecimal|numberSigned"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="150dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.10"
+        android:text="siguiente" />
+
+    <Button
+        android:id="@+id/reiniciar"
+        android:layout_width="150dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.10"
+        android:text="Reiniciar" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center_horizontal"
+        android:visibility="invisible" />
+
+</LinearLayout>
